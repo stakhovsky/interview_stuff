@@ -1,6 +1,7 @@
 $:.unshift(File.dirname(__FILE__) + '/..')
 require 'pow'
 require 'polindrome'
+require 'email'
 
 test_x = (1..11).to_a
 test_neg_n = (-11..-1).to_a
@@ -11,6 +12,20 @@ describe 'Polindrome test' do
 		polindrome('foo').should be_false
 		polindrome('foof').should be_true
 		polindrome('Foof').should be_true
+	end
+end
+
+describe 'Email method in String class' do
+	it 'String class should contain email? method' do
+		(String.method_defined? :email?).should be_true
+	end
+
+	it 'should be true for email address' do
+		'maIl@zone.example.com'.email?.should be_true
+	end
+
+	it 'should be false for not email address' do
+		'It is not@email. string'.email?.should be_false
 	end
 end
 
