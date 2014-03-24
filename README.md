@@ -26,7 +26,7 @@
 - [Документация Ruby](https://www.ruby-lang.org/ru/)
 - [Парсер регулярных вырожений](http://rubular.com/)
 - [Википедия](http://ru.wikipedia.org/)
-- [Гугл](www.google.ru)
+- [Гугл](http://www.google.ru)
 
 ##Тестирование
 
