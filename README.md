@@ -11,7 +11,7 @@
 Для выполнения задач нужно:
 
  1. [установить себе Ruby](http://rubyinstaller.org/)
- 2. установить бандлер, выполнив `gem bundler`
+ 2. установить бандлер, выполнив `gem install bundler`
  2. установить себе VCS [git](http://git-scm.com/book/ru/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git)
  2. сделать форк [репозитария github](https://github.com/CodersGang/interview_stuff)
  2. склонить свой репозитарий github с помощью `git clone <addr>` и получить рабочую копию
