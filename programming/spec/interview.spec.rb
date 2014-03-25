@@ -32,28 +32,28 @@ end
 describe 'Power test' do
 	it 'result of X^0, where n=0 should be OK' do
 		test_x.each do |x|
-			pow(x,0).should be_equal 1
+			(pow(x,0) == 1).should be_true
 		end
 	end
 
 	it 'result of X^n, where n<0 should be OK' do
 		test_x.each do |x|
 			test_neg_n.each do |n|
-				pow(x, n).to_f.should be_equal (x**n).to_f
+				(pow(x, n) == (x**n)).should be_true
 			end
 		end
 
-		pow(4, -0.5).to_f.should be_equal 0.5
+		(pow(4, -0.5) ==  0.5).should be_true
 	end
 
 	it 'result of X^n, where n>0 should be OK' do
 		test_x.each do |x|
 			test_pos_n.each do |n|
-				pow(x, n).should be_equal x**n
+				(pow(x, n) ==  x**n).should be_true
 			end
 		end
 
-		pow(4, 0.5).should be_equal 2.0
+		(pow(4, 0.5) ==  2.0).should be_true
 	end
 end
 
